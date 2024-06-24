@@ -27,7 +27,6 @@ app.options('*', cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb+srv://mahimavarma1609:lokimahi1602@cluster0.e7ca0yb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 // Example endpoint to test CORS
 app.get("/", (req, res, next) => {
   return res.status(200).json({
