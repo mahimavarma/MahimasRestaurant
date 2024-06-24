@@ -6,13 +6,7 @@ import reservationRouter from "./routes/reservationRoute.js";
 import { dbConnection } from "./database/dbConnection.js";
 
 const app = express();
-app.use(cors(
-  {
-    origin: [""],
-    methods:["POST", "GET"],
-    credentials: true
-  }
-  ));
+
 
 dotenv.config({ path: "./config/config.env" });
 
