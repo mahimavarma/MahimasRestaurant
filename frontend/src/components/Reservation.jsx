@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/reservation/send",
+        https://mahimas-restaurant-api.vercel.app/,
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
