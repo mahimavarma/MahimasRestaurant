@@ -15,6 +15,13 @@ const corsOptions = {
   origin: 'http://localhost:5173', // The origin you want to allow
   credentials: true,               // Allow credentials
 };
+app.use(cors(
+   {
+     origin:[""],
+     methods:["POST",GET],
+     credentials: true
+    }
+));
 
 // Apply CORS middleware
 app.use(cors(corsOptions));
