@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        https://mahimas-restaurant-api.vercel.app/,
+        "https://mahimas-restaurant-api.vercel.app/",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
@@ -114,3 +114,4 @@ const Reservation = () => {
 };
 
 export default Reservation;
+
