@@ -13,21 +13,12 @@ const app = express();
 // CORS options
 const corsOptions = {
   origin: 'https://mahimas-restaurant-frontend.vercel.app', // The origin you want to allow
-  credentials: true,               // Allow credentials
+  methods: ["GET", "POST"],   // Allow specific methods
+  credentials: true,          // Allow credentials
 };
-app.use(cors(
-   {
-     origin:[""],
-     methods:["POST",GET],
-     credentials: true
-    }
-));
 
-// Apply CORS middleware
+// Apply CORS middleware once
 app.use(cors(corsOptions));
-
-// Handle preflight requests
-app.options('*', cors(corsOptions));
 
 // Middleware to parse JSON bodies
 app.use(express.json());
