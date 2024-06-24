@@ -12,7 +12,7 @@ const app = express();
 
 // CORS options
 const corsOptions = {
-  origin: 'http://localhost:5173', // The origin you want to allow
+  origin: 'https://mahimas-restaurant-frontend.vercel.app', // The origin you want to allow
   credentials: true,               // Allow credentials
 };
 app.use(cors(
