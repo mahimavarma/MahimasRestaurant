@@ -13,11 +13,8 @@ router.post('/send', (req, res) => {
   }
 
   // Handle the reservation logic here
-  console.log('Received reservation:', req.body);
+  console.log(req.body); // Log the request body to verify the data
 
-  // Simulate saving to database or other logic
-  // Replace with actual database save or integration logic
-  // Example response
   res.status(200).json({
     success: true,
     message: "Reservation received successfully!",
@@ -25,4 +22,3 @@ router.post('/send', (req, res) => {
 });
 
 export default router;
-
