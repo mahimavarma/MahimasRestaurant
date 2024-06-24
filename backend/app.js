@@ -11,7 +11,7 @@ const app = express();
 
 // CORS options
 const corsOptions = {
-  origin: 'https://mahimas-restaurant-frontend.vercel.app', // The origin you want to allow
+  origin: '*', // The origin you want to allow
   methods: ['GET', 'POST'], // Allow specific methods
   credentials: true, // Allow credentials
 };
