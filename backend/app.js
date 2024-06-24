@@ -8,7 +8,7 @@ import { dbConnection } from "./database/dbConnection.js";
 const app = express();
 app.use(cors(
   {
-    origin: ["https://mahimas-restaurant-api.vercel.app"],
+    origin: [""],
     methods:["POST", "GET"],
     credentials: true
   }
