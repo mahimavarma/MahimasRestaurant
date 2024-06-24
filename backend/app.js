@@ -11,9 +11,8 @@ const app = express();
 
 // CORS options
 const corsOptions = {
-  origin: '*', // The origin you want to allow
-  methods: ['GET', 'POST'], // Allow specific methods
-  credentials: true, // Allow credentials
+  credentials: true,
+  origin: true,
 };
 
 // Apply CORS middleware once
