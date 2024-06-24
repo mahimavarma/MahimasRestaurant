@@ -1,7 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import mongoose from 'mongoose'; // Ensure mongoose is imported
 import { errorMiddleware } from './middlewares/error.js';
 import reservationRouter from './routes/reservationRoute.js';
 import { dbConnection } from './database/dbConnection.js';
@@ -46,5 +45,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-
